@@ -1,0 +1,48 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 10rem;
+    height: 3rem;
+   
+}
+.element{
+    display: flex;
+    list-style: none;
+   gap: 2rem;
+   color: white;
+   
+}
+.element>li:hover{
+    cursor: pointer;
+    color: var(--orange);
+    
+}
+/* on big devices */
+.gym-temp-cont{
+    display: none;
+}
+
+@media screen and (max-width: 750px) {
+    .element {
+        display: none;
+        
+    }
+
+    .gym-temp-cont {
+        position: fixed;
+        z-index: 99;
+        right: 10px;
+        display: flex;
+        color: white;
+        list-style: none;
+       
+
+    }
+    .gym-adjust{
+        background-color: rgb(156, 154, 154);
+        border-radius: 7px;
+    }
+   
+}
